@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_app_alimentos_favoritos/screens/categories.dart';
+import 'package:projeto_app_alimentos_favoritos/screens/categories_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +32,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('App Alimentos'),),
-      body: const CategoriesScreen()
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: const CategoriesScreen(),
+      )
     );
   }
 }
