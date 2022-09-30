@@ -32,10 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('App Alimentos'),),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: const CategoriesScreen(),
-      )
+      body: const CategoriesScreen()
     );
   }
 }
